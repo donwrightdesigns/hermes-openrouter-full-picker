@@ -41,7 +41,8 @@ every refresh, and a stale manifest can never break the picker.
 
 ```bash
 # 1. put the script under ~/.hermes/scripts/ (anywhere works)
-curl -o ~/.hermes/scripts/refresh_openrouter_catalog.py <raw url>
+curl -o ~/.hermes/scripts/refresh_openrouter_catalog.py \
+  https://raw.githubusercontent.com/donwrightdesigns/hermes-openrouter-full-picker/main/refresh_openrouter_catalog.py
 
 # 2. generate the manifest (prints your exact config command)
 python ~/.hermes/scripts/refresh_openrouter_catalog.py
