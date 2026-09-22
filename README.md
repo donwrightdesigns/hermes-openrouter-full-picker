@@ -1,5 +1,7 @@
 # hermes-openrouter-full-picker
 
+![OpenRouter × Hermes — Leveling Up](banner.png)
+
 Hermes Agent's `/model` picker shows ~34 of OpenRouter's ~450 models. This script makes
 it show **all ~380 text-output, tool-calling-capable ones** (verified live: **376 of 445**
 on 2026-09-21) — no source edits, survives
