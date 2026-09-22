@@ -1,9 +1,10 @@
 # hermes-openrouter-full-picker
 
 Hermes Agent's `/model` picker shows ~34 of OpenRouter's ~450 models. This script makes
-it show **all ~378 text-output, tool-calling-capable ones** — no source edits, survives
+it show **all ~380 text-output, tool-calling-capable ones** (verified live: **376 of 445**
+on 2026-09-21) — no source edits, survives
 `hermes update`, zero cost. Curated flagships stay on top; brand-new models appear on
-their own day one.
+their own day one (xiaomi mimo-v2.6 hit the picker the same day it dropped on OpenRouter).
 
 ## Why the stock picker is tiny
 
@@ -59,9 +60,10 @@ global one automatically).
 
 Any scheduler works. Hermes cron example:
 
-* every 12h, `no_agent: true`, script: `refresh_openrouter_catalog.py`, deliver: local
+* every 6-12h, `no_agent: true`, script: `refresh_openrouter_catalog.py`, deliver: local
 
-New OpenRouter models then appear in the picker within half a day of release. Offline
+New OpenRouter models then appear in the picker within hours of release (6h cadence
+tested live; the mimo-v2.6 trio landed same-day). Offline
 runs leave the existing manifest untouched (exit 1, no clobber).
 
 ## Compatibility
